@@ -1,0 +1,416 @@
+/* Some Colors */
+
+/* Chocolate #261511 */
+
+body {
+  background-color: #f2f2f2 !important;
+}
+
+/* Navbar Section Starts Here */
+/* Navbar Section will stay same on all Pages */
+
+#navbar {
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 2px 4px rgba(38, 21, 17, 0.5);
+}
+
+.navbar a {
+  color: #532116 !important;
+  font-size: larger !important;
+  font-weight: bolder !important;
+}
+
+.navbar a:hover {
+  color: #eab74c !important;
+}
+/* Navbar Section Ends Here */
+
+/* Regular Cards */
+.card-body {
+  color: #eab74c;
+}
+
+.card {
+  background: transparent !important;
+}
+
+#showcase,
+#about-us,
+#highlights {
+  position: relative;
+  z-index: 1;
+}
+
+#showcase::before,
+#about-us::before,
+#highlights::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(images/Flowers-bg.png) repeat-x;
+  background-size: cover;
+  opacity: 0.2;
+  filter: blur(1px);
+}
+
+#bakers {
+  position: relative;
+  z-index: 1;
+}
+/* 
+#bakers::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  height: 100%;
+  background: url(images/Flowers-bg2.png) repeat-x;
+  background-size: cover;
+  opacity: 0.5;
+  filter: blur(0px);
+} */
+
+#speciality {
+  position: relative;
+  z-index: 1;
+}
+
+#speciality::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/core-values-bg.png) repeat-x;
+  background-size: cover;
+  opacity: 1;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  color: #532116 !important;
+  font-weight: bolder !important;
+}
+
+.btn {
+  background-color: #261511 !important;
+  color: #eab74c !important;
+  font-weight: bold !important;
+}
+
+.btn:hover {
+  color: #ffffff !important;
+}
+
+#happy-customers {
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 -2px 4px rgba(38, 21, 17, 0.5), 0 2px 4px rgba(38, 21, 17, 0.5);
+}
+
+#happy-customers::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/Bakery-bg.jpg);
+  background-size: cover;
+  opacity: 0.1;
+  filter: blur(1px);
+}
+
+/* Favourite Cakes */
+/* This is on Home Page */
+/* 
+#favorite-cake-container{
+overflow: none;
+}
+#slider-wrapper {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(10, 1fr);
+  overflow-x: auto;
+  scrollbar-width: none;
+  max-width: 1200px;
+  width: 95%;
+}
+
+#slider-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+#slider-wrapper img {
+  width: 250px;
+  height: 325px;
+  object-fit: cover;
+}
+
+
+
+*/
+
+/* Footer Section Starts Here */
+/* Footer Section will stay same on all Pages */
+footer {
+  background-color: #eee7e6;
+}
+
+#footer-item a {
+  color: #59433e;
+}
+
+#footer-item a:hover {
+  color: #d49283 !important;
+}
+
+#footer-item button {
+  background-color: #a16355;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#footer-item button:hover {
+  color: #dcc3a1 !important;
+}
+
+#footer-card {
+  position: relative;
+  overflow: hidden;
+}
+
+#footer-card:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 220%;
+  background: rgba(216, 154, 139, 0.8);
+  top: -50%;
+  left: -100%;
+  z-index: 1;
+  transform: rotate(35deg);
+  transform-origin: center top 0;
+  transition: 0.5s;
+}
+
+#footer-card:hover:before {
+  left: 40%;
+}
+
+#footer-card:hover #footer-card-text {
+  top: 40%;
+}
+
+#footer-card img {
+  width: 100%;
+  height: auto;
+}
+
+#footer-card-text {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: 1.1s;
+}
+
+#footer-card:hover #footer-card-text {
+  opacity: 1;
+  top: 10px;
+}
+
+/* Footer Section Ends Here */
+
+@media (max-width: 992px) {
+  section {
+    background: none;
+  }
+}
+
+/* About Page starts here */
+
+#favorite-flavors-card {
+  max-width: min-content;
+}
+#favorite-flavors-card > .card {
+  border: none;
+  flex: 0 0 auto;
+  width: 250px;
+  align-items: center;
+}
+#favorite-flavors-card > .card > img {
+  border-radius: 5px;
+  object-fit: cover;
+  max-height: 250px;
+}
+
+#favorite-flavors-card::-webkit-scrollbar {
+  display: none;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+#favorite-flavors {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(38, 21, 17, 0.5);
+}
+
+#favorite-flavors::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://img.freepik.com/free-photo/cupcakes-handfan-candies-gift-box-ribbon-white-backdrop_23-2147917339.jpg?t=st=1696728826~exp=1696729426~hmac=5c5e907cf697e6599488fa7bd443568b1b884007dea8ac9ab504e8f8ef007d54)
+    repeat-y;
+  background-size: cover;
+  opacity: 0.1;
+  filter: blur(4px);
+}
+
+/* Contact/ Enquire Page starts here  */
+
+#address-map {
+  background: url(images/location-image.JPG);
+  height: 600px;
+}
+
+#contact-form label {
+  color: #59433e !important;
+}
+
+@media (max-width: 768px) {
+  #favorite-flavors-card > .card {
+    width: 150px;
+    height: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  #favorite-flavors-card > .card {
+    width: 100px;
+    height: 25%;
+  }
+}
+
+/* #faq{
+  position: relative;
+
+}
+
+#faq::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/core-values-bg.png)
+    repeat-y;
+  background-size: cover;
+  opacity: 1;
+
+} */
+
+/* Menu Page starts here */
+
+#menu-overview {
+  position: relative;
+  z-index: 1;
+}
+
+#menu-overview::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/Flowers-bg.png) repeat-y;
+  opacity: 0.5;
+  background-position: cover;
+  z-index: -1;
+}
+
+#menu-cards:hover {
+  background-color: #e4e4e4 !important;
+}
+
+/* Gallery Page Starts Here */
+
+#gallery {
+  position: relative;
+  z-index: 1;
+}
+
+#gallery::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-size: 100% 100%;
+  background: url(images/Flowers-bg.png);
+}
+
+#gallery-card img {
+  width: 100%;
+  height: auto;
+}
+
+#gallery-card {
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery-card:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(80, 68, 65, 0.5);
+  /* top: -50%; */
+  opacity: 0;
+  z-index: 1;
+  /* transform: rotate(35deg); */
+  transform-origin: center top 0;
+  transition: 0.5s;
+}
+
+#gallery-card:hover:before {
+  opacity: 1;
+  left: 0;
+}
+
+#gallery-card-text {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+#gallery-card:hover #gallery-card-text {
+  opacity: 1;
+}

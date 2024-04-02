@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cake Shop</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="one stop shop for all kinds of cakes" />
+    <meta name="keyword" content="cake, vegan, vegetarian, pastries" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Oxygen:wght@400;700&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body
+    style="
+      font-weight: bold;
+      font-size: larger;
+      font-family: Barlow Semi Condensed, sans-serif;
+      font-family: Karla, sans-serif;
+      font-family: Lustria, serif;
+      font-family: Oxygen, sans-serif;
+      font-family: Poiret One, sans-serif;
+      color: #eab74c;
+    "
+  >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md" id="navbar">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse order-2 order-md-1" id="navmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="about.html" class="nav-link active">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Enquire</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="container"> -->
+        <a href="index.html" class="navbar-brand order-1 order-md-2"
+          ><img
+            class="img-fluid"
+            src="images/cake-shop-logo.png"
+            alt="Cake Shop"
+            style="max-height: 100px"
+        /></a>
+        <!-- </div> -->
+        <div class="collapse navbar-collapse order-3 order-md-3" id="navmenu">
+          <ul class="navbar-nav ms-auto d-md-flex flex-row flex-md-row">
+            <li class="nav-item flex-grow-1">
+              <a
+                href="https://www.instagram.com"
+                target="main"
+                class="nav-link"
+                alt="instagram"
+                ><i class="fi fi-brands-instagram" alt="instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a
+                href="https://www.facebook.com"
+                target="main"
+                class="nav-link"
+                alt="facebook"
+                ><i class="fi fi-brands-facebook" alt="facebook"></i
+              ></a>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a
+                href="https://www.tiktok.com"
+                target="main"
+                class="nav-link"
+                alt="tiktok"
+                ><i class="fi fi-brands-tik-tok" alt="tiktok"></i
+              ></a>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a href="#" class="nav-link" alt="cart"
+                ><i class="fi fi-rr-shopping-cart" alt="cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gallery -->
+
+    <div class="section" id="gallery">
+      <div class="container">
+        <div class="row gy-5 mb-5 mt-5 text-center">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/blog-1.jpg" alt="" />
+              <div class="card-text fs-6" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/blog-2.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/blog-3.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/blog-4.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/cake-img4.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/cake-img3.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/cake-img2.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/cake-img1.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/cake-img4.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/cake-img3.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/cake-img2.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-0" id="gallery-card">
+              <img class="img-thumbnail" src="images/cake-img1.jpg" alt="" />
+              <div class="card-text" id="gallery-card-text">
+                <h4 class="fs-2" style="color: #ffffff; font-weight: bolder">
+                  Cake Name
+                </h4>
+                <p class="d-none d-lg-block">Brief description</p>
+                <a href="" class="btn"> Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 text-center mt-4">
+            <h3>Don't Forget To Check Our Blogs</h3>
+          </div>
+          <div class="col-lg-2 mt-3 d-none d-lg-block">
+            <div class="card border-0" id="footer-card">
+              <img src="images/blog-1.jpg" alt="" />
+              <div class="card-text fs-6" id="footer-card-text">
+                <h4>Blog Name</h4>
+                <p class="d-none d-lg-block">Brief description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-3 col-lg-2 mt-3">
+            <div class="card border-0" id="footer-card">
+              <img src="images/blog-2.jpg" alt="" />
+              <div class="card-text" id="footer-card-text">
+                <h4>Blog Name</h4>
+                <p class="d-none d-lg-block">Brief description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 mt-3 d-none d-md-block">
+            <div class="card border-0" id="footer-card">
+              <img src="images/blog-3.jpg" alt="" />
+              <div class="card-text" id="footer-card-text">
+                <h4>Blog Name</h4>
+                <p class="d-none d-lg-block">Brief description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-3 col-lg-2 mt-3">
+            <div class="card border-0" id="footer-card">
+              <img src="images/blog-4.jpg" alt="" />
+              <div class="card-text" id="footer-card-text">
+                <h4>Blog Name</h4>
+                <p class="d-none d-lg-block">Brief description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-3 col-lg-2 mt-3">
+            <div class="card border-0" id="footer-card">
+              <img src="images/blog-5.jpg" alt="" />
+              <div class="card-text" id="footer-card-text">
+                <h4>Blog Name</h4>
+                <p class="d-none d-lg-block">Brief description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between mt-5">
+          <div class="col-12 col-md-auto text-center text-md-start mb-4">
+            <h3>Cake Shop</h3>
+            <span style="color: #59433e">Your Sweet Journey Begins Here</span>
+          </div>
+          <div class="col-auto" id="footer-item">
+            <a href="about.html" class="nav-link">About</a
+            ><a href="menu.html" class="nav-link">Menu</a
+            ><a href="gallery.html" class="nav-link">Gallery</a>
+          </div>
+          <div class="col-auto" id="footer-item">
+            <a href="blog.html" class="nav-link">Blog</a
+            ><a href="about.html#faq" class="nav-link">FAQ</a>
+          </div>
+          <div class="col-auto" id="footer-item">
+            <a href="contact.html"><button>Enquire Here</button></a>
+            <div class="row mt-4">
+              <ul
+                class="d-flex justify-content-between"
+                style="list-style-type: none"
+              >
+                <li>
+                  <a
+                    href="https://www.instagram.com"
+                    target="main"
+                    class="nav-link"
+                    ><i class="fi fi-brands-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com"
+                    target="main"
+                    class="nav-link"
+                    ><i class="fi fi-brands-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tiktok.com"
+                    target="main"
+                    class="nav-link"
+                    ><i class="fi fi-brands-tik-tok"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link"
+                    ><i class="fi fi-rr-shopping-cart"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
